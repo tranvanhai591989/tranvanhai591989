@@ -8,24 +8,26 @@
 <form method="get" action="simpleform.html">
     <h2>Oder Form</h2>
     <p>What wouth you like to buy ?</p>
-    <selec>
-        <option value="A">1</option>
-        <option >B</option>
-        <option >C</option>
-
-    </selec>
-    <p>How many would you like to order?</p>
-    <select >
-        <option value="">1- $10</option>
-        <option >2- $20</option>
-        <option >3- $25</option>
+    <select>
+        <option value=""> A</option> <size>30</size>
+        <option >B ( + 0.5$)</option>
+        <option >C ( + 0.5$)</option>
 
     </select>
-    <p>Name <span style="color: red">*</span></p>
+    <p>How many would you like to order?</p>
+    <input type="radio" name="rd"/> 1- $10 <br/>
+    <input type="radio" name="rd"/> 2- $20 <br/>
+    <input type="radio" name="rd"/> 3- $25 <br/>
+    <p>Name <span style="color: #0048ff">*</span></p>
     <input type="text" name="First Name" placeholder="First Name">
     <input type="text" name="Last Name" placeholder="Last Name">
     <p>Email</p>
-    
+    <input type="text" name="Email" placeholder="...@gmail.com, ...@yahoo.com   ....">
+    <p>Phone number</p>
+    <input type="number" name="Phone 1">
+    <input type="number" name="Phone 2">
+    <input type="number" name="Phone 3">
+    <p><input type="button" name="Sumit" value="Sumit"></p>
 </form>
 
 </body>
