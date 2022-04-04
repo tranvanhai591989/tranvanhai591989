@@ -1,0 +1,37 @@
+1. Tính tổng 2 số nhập vào từ người dùng.
+BEGIN
+	INPUT a, b
+	total = a + b
+	DISPLAY total
+END
+
+2. Xác định một số nhập vào từ người dùng là số chẵn/số lẻ
+BEGIN
+	INPUT a
+	b = a mod 2 (chia lấy dư)
+	IF (b = 0) 
+		DISPLAY 'a là số chẵn'
+	ELSE
+		DISPLAY "a là số lẻ"
+END
+--------
+1 2 3 4 5 6
+a%2 : phép chia lấy dư
+
+3. In ra 100 lần chuỗi "C0322G1"
+//Cach 1
+BEGIN
+	DISPLAY "C0322G1"
+	DISPLAY "C0322G1"
+	...
+	...
+	DISPLAY "C0322G1" //lần 100
+END
+
+//Cach 2
+BEGIN
+	count = 1
+	WHILE count <= 100
+		DISPLAY "C0322G1"
+		count = count + 1 //2 3..100 101
+END
