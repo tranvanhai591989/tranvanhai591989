@@ -1,0 +1,14 @@
+begin
+	if a>=75
+	display "Loại A" then
+	else a>=60
+	display "Loại B" then
+	else a>=45
+	display "Loại C" then
+	if a>=35
+	display "Loại D"
+	else display "Loại E"
+end
+
+ 
+	

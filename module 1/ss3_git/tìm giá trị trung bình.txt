@@ -1,0 +1,5 @@
+begin
+	input a,b,c
+	average (a+b+c)/3
+	display average
+end
