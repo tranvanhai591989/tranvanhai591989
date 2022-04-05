@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen doi tien te</title>
+</head>
+<body>
+<table >
+    <tr>
+        <th>Amount</th>
+        <th>Form Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <th><input type="number" id="nhapdulieu"></th>
+        <th>
+            <select id="banga">
+                <option value="a">Vnd</option>
+                <option value="b">Usd</option>
+            </select>
+        </th>
+        <th>
+            <select id="bangb">
+                <option value="a">Vnd</option>
+                <option value="b">Usd</option>
+            </select>
+        </th>
+        <th>
+            <button onclick="convert()"  style="background-color: mediumturquoise">Quy doi</button>
+        </th>
+    </tr>
+    <tr>
+    <th> Gia tri :
+        <td id="kq"></td>
+    </th>
+    </tr>
+</table>
+<script>
+    function convert {
+        let giatridauvao = document.getElementById('nhapdulieu').value;
+        let a = document.getElementById('banga').value;
+        let b = document.getElementById('bangb').value;
+        if (a==b){
+            alert(giatridauvao);
+        }
+        if (a=='a'&&b=='b'){
+            alert(giatridauvao/23000);
+        }
+    }
+
+
+</script>
+    </body>
+        </html>

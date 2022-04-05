@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ung dung may tinh</title>
+</head>
+<body>
+<table>
+
+
+    <tr>
+        <input type="number" id="vao1">
+    </tr>
+    <tr>
+        <input type="number" id="vao2">
+    </tr>
+    <tr>
+      <th>
+          <input type="button" value="Addition(+)" onclick="cong()">
+          <input type="button" value="Subtraction(-)" onclick="tru()">
+          <input type="button" value="Multiplication(X)" onclick="nhan()">
+          <input type="button" value="Division(/)" onclick="chia()">
+      </th>
+    </tr>
+    <tr>
+        <th id="ketqua">Ket qua</th>
+        <th ></th>
+    </tr>
+</table>
+<script>
+    function cong() {
+        let a= parseFloat(document.getElementById('vao1').value);
+        let b= parseFloat(document.getElementById('vao2').value);
+        let c= a+b;
+        document.getElementById('ketqua').innerHTML='Ket qua :'+ c;
+    }
+    function tru() {
+        let a= parseFloat(document.getElementById('vao1').value);
+        let b= parseFloat(document.getElementById('vao2').value);
+        let c= a-b;
+        document.getElementById('ketqua').innerHTML='Ket qua :'+ c;
+    }
+    function nhan() {
+        let a= parseFloat(document.getElementById('vao1').value);
+        let b= parseFloat(document.getElementById('vao2').value);
+        let c= a*b;
+        document.getElementById('ketqua').innerHTML='Ket qua :'+ c;
+    }
+    function chia() {
+        let a= parseFloat(document.getElementById('vao1').value);
+        let b= parseFloat(document.getElementById('vao2').value);
+        let c= a/b;
+        document.getElementById('ketqua').innerHTML='Ket qua :'+ c;
+    }
+
+</script>
+
+</body>
+</html>
