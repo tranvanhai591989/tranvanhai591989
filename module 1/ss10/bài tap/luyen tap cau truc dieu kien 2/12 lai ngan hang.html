@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính lãi mẹ đẻ lãi con</title>
+</head>
+<body>
+<script>
+    let bankLoan = parseInt(prompt('Nhập số tiền vay'));
+    let month = parseInt(prompt('Số tháng mà phải thanh toán đúng hạn'));
+    let month2 = parseInt(prompt('Số tháng hiện đang thanh toán'));
+    let payableInamont = bankLoan / month;
+    if (month2 <= month) {
+        alert('Bạn thanh toán rất đúng hạn');
+    } else {
+        let tienphat = (month2 - month) * (bankLoan * 0.01) + payableInamont
+        alert(tienphat);
+    }
+
+
+</script>
+</body>
+</html>
