@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    // Cho 3 số bất kỳ, tìm số lớn thứ 2 trong 3 số đó. Nếu không có số lớn thứ 2 thì trả về -1.
+    // VD: Với input là 1,2,3, thì kết quả là findSecondLargeNum( 1,2,3 ) = 2 ;
+    // Với input là 5,5,5, thì kết quả là findSecondLargeNum( 5,5,5 ) = -1 ;
+    // Với input là 1,2,1, thì kết quả là findSecondLargeNum( 1,2,1 ) = 1 ;
+
+    let a = parseInt(prompt('Nhâp số thứ nhất: '));
+    let b = parseInt(prompt('Nhập số thứ hai: '));
+    let c = parseInt(prompt('Nhập số thứ ba: '));
+
+    if ((a > b && a < c) || (a < b && a > c)) {
+        document.write('Số lớn thứ 2 là: ' + ' ' + a)
+    } else if ((b > a && b < c) || (b < a && b > c)) {
+        document.write('Số lớn thứ 2 là: ' + ' ' + b)
+    } else if ((c > a && c < b) || (c < a && c > b)) {
+        document.write('Số lớn thứ 2 là: ' + ' ' + c)
+    } else if (a === c && b === c) {
+        document.write('-1')
+    } else if (a === b || a === c || b === c) {
+        document.write('1')
+    }
+</script>
+
+
+</script>
 </body>
 </html>

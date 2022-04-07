@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xep hang hoc luc</title>
+</head>
+<body>
+<script>
+    let kt1 = parseInt(prompt('a1'));
+    let kt2 = parseInt(prompt('a2'));
+    let kt3 = parseInt(prompt('a3'));
+    let dgk = parseInt(prompt('gk'));
+    let dck = parseInt(prompt('ck'));
+    let tbkt = (kt1 + kt2 + kt3) / 3;
+    let tbcn = (tbkt + dgk + dck) / 3;
+    if (tbcn > 10) {
+        alert('Điểm nhập không đúng')
+    } else if (tbcn >= 8) {
+        alert('Học sinh giỏi');
+    } else if (tbcn >= 6.5) {
+        alert('Học sinh khá');
+    } else if (tbcn >= 5) {
+        alert('Học sinh trung bình');
+    } else alert('Học sinh yếu');
+</script>
+
+</body>
+</html>

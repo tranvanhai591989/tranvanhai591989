@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen doi nhiet do</title>
+</head>
+<body>
+<input type="number" id="gtVao" placeholder="Nhập vào đây">
+
+<button onclick="a('c')">o<sub>C</sub></button>
+<button onclick="a('f')">o<sub>F</sub></button>
+<br>
+<input type="text" id="gtRa">
+
+
+
+<script>
+    function a(value) {
+        let giaTriVao = parseInt(document.getElementById('gtVao').value);
+        if(value === 'c'){
+            let abc = ((giaTriVao*1.8)+32);
+            document.getElementById('gtRa').value = abc + ' oF';
+        }else if (value === 'f'){
+            let zxc= ((giaTriVao-32)/1.8);
+            document.getElementById('gtRa').value=zxc + ' oC'
+        }
+
+    }
+</script>
+</body>
+</html>

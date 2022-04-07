@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhap so bat ki va so sanh voi 0</title>
+</head>
+<body>
+<input type="number" id="so" value="">
+<input type="submit" value="Nhập" onclick="abc()">
+<p style="color: blueviolet" id="ketqua"></p>
+<script>
+    function abc() {
+        let a = parseInt(document.getElementById('so').value);
+        if (a < 0) {
+            document.getElementById('ketqua').innerHTML = 'Số âm';
+        } else if (a > 0) {
+            document.getElementById('ketqua').innerHTML = 'Số dương';
+        } else document.getElementById('ketqua').innerHTML = 'Số 0';
+    }
+
+
+</script>
+</body>
+</html>

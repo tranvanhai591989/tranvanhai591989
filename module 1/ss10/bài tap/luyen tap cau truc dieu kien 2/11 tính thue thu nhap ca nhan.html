@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh thue thu nhap ca nhan</title>
+</head>
+<body>
+<script>
+    let thuNhapThucTe = parseFloat(prompt('Nhập thu nhập năm thực tế của bạn'));
+    if (thuNhapThucTe>960){
+        let thuePhaiNop = thuNhapThucTe*0.35;
+        alert('Thuế phải nộp : '+thuePhaiNop);
+    }else if(thuNhapThucTe>624){
+        let thuePhaiNop = thuNhapThucTe*0.3;
+        alert('Thuế phải nộp : '+thuePhaiNop);
+    }else if(thuNhapThucTe>384){
+        let thuePhaiNop = thuNhapThucTe*0.25;
+        alert('Thuế phải nộp : '+thuePhaiNop);
+    }else if(thuNhapThucTe>216){
+        let thuePhaiNop = thuNhapThucTe*0.2;
+        alert('Thuế phải nộp : '+thuePhaiNop);
+    }else if(thuNhapThucTe>120){
+        let thuePhaiNop = thuNhapThucTe*0.15;
+        alert('Thuế phải nộp : '+thuePhaiNop);
+    }else if(thuNhapThucTe>60){
+        let thuePhaiNop = thuNhapThucTe*0.1;
+        alert('Thuế phải nộp : '+thuePhaiNop);
+    }else if(thuNhapThucTe>0){
+        let thuePhaiNop = thuNhapThucTe*0.05;
+        alert('Thuế phải nộp : '+thuePhaiNop);
+    }else {
+        alert('Không Phải nộp')
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhap 3 so va tim so lon nhat</title>
+</head>
+<body>
+
+<p><input type="number" id="so1" value=""></p>
+<p><input type="number" id="so2" value=""></p>
+<p><input type="number" id="so3" value=""></p>
+<p><input type="submit" value="Tìm" onclick="timsolonnhat()"></p>
+<p id="Total"></p>
+<script>
+    function timsolonnhat() {
+        let a = parseInt(document.getElementById('so1').value);
+        let b = parseInt(document.getElementById('so2').value);
+        let c = parseInt(document.getElementById('so3').value);
+        if (a > b && a > c) {
+            document.getElementById('Total').innerHTML = a + ": Là số lớn nhất";
+        } else if (b > c && b > a) {
+            document.getElementById('Total').innerHTML = b + ' Là số lớn nhất';
+        } else {
+            document.getElementById("Total").innerText = c + ' Là số lớn nhất';
+
+        }
+
+    }
+</script>
+</body>
+</html>

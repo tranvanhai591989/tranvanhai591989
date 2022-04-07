@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh cuoc dien thoai</title>
+</head>
+<body>
+<script>
+    let goiNoiMang = parseInt(prompt('Số phút gọi nội mạng'));
+    let tnNoiMang = parseInt(prompt('Số tin nhắn gọi nội mạng'));
+    let goiNgoaimang = parseInt(prompt('Số phút gọi ngoại mang'));
+    let tnNgoaiMang = parseInt(prompt('Số tin nhắn ngoại mạng'));
+    const GNM = 350;
+    const GNGM = 500;
+    const TNNM = 150;
+    const TNNGM = 200;
+    if (goiNoiMang > 100) {
+        let cuoc = ((goiNoiMang * 300) + (tnNoiMang * TNNM) + (goiNgoaimang
+            * GNGM) + (tnNgoaiMang * TNNGM));
+        document.write('Tiền tháng này' + cuoc);
+
+    } else {
+        let cuoc = goiNoiMang * GNM + tnNoiMang * TNNM + goiNgoaimang
+            * GNGM + tnNgoaiMang * TNNGM;
+        document.write('Tiền tháng này' + cuoc);
+    }
+</script>
+</body>
+</html>

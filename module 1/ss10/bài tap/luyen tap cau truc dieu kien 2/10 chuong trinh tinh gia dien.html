@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh gia dien</title>
+</head>
+<body>
+// áp dụng cho giá điện sinh hoạt
+<script>
+    let chuDien = parseFloat(prompt('Nhập số kWh '));
+    if (chuDien>400){
+        let thanhToan = chuDien*2927;
+        alert(thanhToan)
+    }else if(chuDien>300){
+        let thanhToan = chuDien*2834
+        alert(thanhToan)
+
+    } else if(chuDien>200){
+        let thanhToan = chuDien*2536
+        alert(thanhToan)
+
+    }else if(chuDien>100){
+        let thanhToan = chuDien*2014
+        alert(thanhToan)
+
+    }else if(chuDien>50){
+        let thanhToan = chuDien*1734
+        alert(thanhToan)
+
+    }else if(chuDien>0){
+        let thanhToan = chuDien*1678
+        alert(thanhToan)
+
+    }else {
+        alert('Không có')
+    }
+</script>
+</body>
+</html>

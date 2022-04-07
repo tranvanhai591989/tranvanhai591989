@@ -5,50 +5,32 @@
     <title>chuyen doi tien te</title>
 </head>
 <body>
-<table >
-    <tr>
-        <th>Amount</th>
-        <th>Form Currency</th>
-        <th>To Currency</th>
-    </tr>
-    <tr>
-        <th><input type="number" id="nhapdulieu"></th>
-        <th>
-            <select id="banga">
-                <option value="a">Vnd</option>
-                <option value="b">Usd</option>
-            </select>
-        </th>
-        <th>
-            <select id="bangb">
-                <option value="a">Vnd</option>
-                <option value="b">Usd</option>
-            </select>
-        </th>
-        <th>
-            <button onclick="convert()"  style="background-color: mediumturquoise">Quy doi</button>
-        </th>
-    </tr>
-    <tr>
-    <th> Gia tri :
-        <td id="kq"></td>
-    </th>
-    </tr>
-</table>
+<input type="number" id="dauvao">
+<select name="" id="select1">
+    <option value="a">Vnd</option>
+    <option value="b">Usd</option>
+</select>
+<select name="" id="select2">
+    <option value="a">Vnd</option>
+    <option value="b">Usd</option>
+</select>
+<button onclick="quyDoi()">Quy doi</button>
+<p id="daura">Thanh tien: </p>
 <script>
-    function convert {
-        let giatridauvao = document.getElementById('nhapdulieu').value;
-        let a = document.getElementById('banga').value;
-        let b = document.getElementById('bangb').value;
-        if (a==b){
-            alert(giatridauvao);
+    function quyDoi() {
+        let giatridauvao = document.getElementById('dauvao').value;
+        let select1 = document.getElementById('select1').value;
+        let select2 = document.getElementById('select2').value;
+        if (select1==select2){
+            document.getElementById('daura').innerHTML ='Thanh tien:'+ giatridauvao;
         }
-        if (a=='a'&&b=='b'){
-            alert(giatridauvao/23000);
+        if (select1=='a'&&select2=='b'){
+            document.getElementById('daura').innerHTML ='Thanh tien:'+ giatridauvao/23000;
         }
+        if (select1=='b'&&select2=='a')
+            document.getElementById('daura').innerHTML ='Thanh tien:'+ giatridauvao*23000;
+
     }
-
-
 </script>
-    </body>
-        </html>
+</body>
+</html>

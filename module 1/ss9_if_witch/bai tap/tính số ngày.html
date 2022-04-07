@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>tính số ngày</title>
 </head>
 <body>
-$END$
+<input type="number" id="thag" value="">
+<input type="submit" value="submit" onclick="abc()">
+<p style="color: blueviolet" id="ketqua"></p>
+<script>
+    function abc() {
+        let thang = parseInt(document.getElementById('thag').value);
+        switch (thang) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                document.getElementById('ketqua').innerHTML = 'Tháng '+ thang + ' có 31 ngày';
+                break;
+
+            default :
+                document.getElementById('ketqua').innerHTML = 'Không tồn tại';
+        }
+    }
+</script>
+
 </body>
 </html>

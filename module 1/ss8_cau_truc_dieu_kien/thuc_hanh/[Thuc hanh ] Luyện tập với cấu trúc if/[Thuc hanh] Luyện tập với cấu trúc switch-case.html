@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Luyện tập với cấu trúc switch-case</title>
 </head>
 <body>
-$END$
+<script>
+    let brower=prompt('dien vao day')
+    switch (brower) {
+        case 'edge':
+            alert('Bạn là đại bàng');
+            break;
+        case 'chorme':
+        case 'firefox':
+        case 'Safari':
+        case 'Opera':
+            alert('Okay we support these browsers too');
+            break;
+        default : alert('We hope that this page looks oke!');
+    }
+
+</script>
 </body>
 </html>
