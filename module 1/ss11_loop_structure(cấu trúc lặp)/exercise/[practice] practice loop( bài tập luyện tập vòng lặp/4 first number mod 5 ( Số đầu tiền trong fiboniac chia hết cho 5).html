@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số đầu tiên trong dãy fibonacci chia hết cho 5</title>
+</head>
+<body>
+<script>
+    let a = 0 ;
+    let b =1 ;
+    let nextNumber ;
+    for (let i=1;i<=20;i++){
+        nextNumber= a+b;
+        a=b;
+        b=nextNumber;
+        if (a%5===0){
+            alert(a + "là số đầu tiên trong dãy fiboniacci chia hết cho 5");break}
+    }
+
+</script>
+</body>
+</html>

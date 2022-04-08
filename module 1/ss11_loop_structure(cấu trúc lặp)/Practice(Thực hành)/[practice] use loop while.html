@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sử dụng vòng lặp while</title>
+</head>
+<body>
+<script>
+    let num = parseFloat(prompt("Enter your number : "));
+    let total = 0 ;
+    while (num !== -1) {
+        total += num ;
+        document.write(total);
+        if (num === -1) {
+            continue
+        }
+        break
+    }
+</script>
+</body>
+</html>.

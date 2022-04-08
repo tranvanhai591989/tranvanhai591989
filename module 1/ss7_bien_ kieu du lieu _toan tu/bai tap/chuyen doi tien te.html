@@ -5,30 +5,30 @@
     <title>chuyen doi tien te</title>
 </head>
 <body>
-<input type="number" id="dauvao">
+<input type="number" id="dauvao">;
 <select name="" id="select1">
-    <option value="a">Vnd</option>
-    <option value="b">Usd</option>
+    <option value="a">Vnd</option>;
+    <option value="b">Usd</option>;
 </select>
 <select name="" id="select2">
     <option value="a">Vnd</option>
     <option value="b">Usd</option>
 </select>
-<button onclick="quyDoi()">Quy doi</button>
+<button onclick="quyDoi()">Quy doi</button>;
 <p id="daura">Thanh tien: </p>
 <script>
     function quyDoi() {
-        let giatridauvao = document.getElementById('dauvao').value;
+        let giaTriDauVao = document.getElementById('dauvao').value;
         let select1 = document.getElementById('select1').value;
         let select2 = document.getElementById('select2').value;
-        if (select1==select2){
-            document.getElementById('daura').innerHTML ='Thanh tien:'+ giatridauvao;
+        if (select1 === select2) {
+            document.getElementById('daura').innerHTML = 'Thanh tien:' + giaTriDauVao;
         }
-        if (select1=='a'&&select2=='b'){
-            document.getElementById('daura').innerHTML ='Thanh tien:'+ giatridauvao/23000;
+        if (select1 === 'a' && select2 === 'b') {
+            document.getElementById('daura').innerHTML = 'Thanh tien:' + giaTriDauVao / 23000;
         }
-        if (select1=='b'&&select2=='a')
-            document.getElementById('daura').innerHTML ='Thanh tien:'+ giatridauvao*23000;
+        if (select1 === 'b' && select2 === 'a')
+            document.getElementById('daura').innerHTML = 'Thanh tien:' + giaTriDauVao * 23000;
 
     }
 </script>
