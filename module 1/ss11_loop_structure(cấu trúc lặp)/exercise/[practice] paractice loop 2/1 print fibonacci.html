@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In dãy fibonacci</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let nextNumber;
+    let n = parseInt(prompt("Nhập số lượng dãy Fibonacci cần in ra"));
+    for (let i = 1; i <= n; i++) {
+        document.write(a + "<br>");
+        nextNumber = a + b;
+        a = b;
+        b = nextNumber;
+
+    }
+</script>
+</body>
+</html>

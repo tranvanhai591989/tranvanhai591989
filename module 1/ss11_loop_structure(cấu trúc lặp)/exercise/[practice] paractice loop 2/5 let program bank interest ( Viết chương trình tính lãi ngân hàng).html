@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>banks interest</title>
+</head>
+<body>
+<script>
+    let money = parseInt(prompt("Nhập số tiền vào đây"));
+    let month = parseInt(prompt("Nhập số tháng gởi tiền vào đây"));
+    let total;
+    let interest;
+    const INTERSET = 0.04;
+    const INTERSET12 = 0.045;
+    for (let i = 1; i <= month; i++) {
+        if (month>=12){
+            interest = (INTERSET12) * money;
+            total = money + interest;
+            money = total;
+
+
+            document.write("Lãi tháng " + i + " : " + interest + "<br>")
+            document.write("Tiền tính lãi gộp tháng : " + i + " : " + total + "<br>")
+        }else {
+            interest = INTERSET * money;
+            total = money + interest;
+            money = total;
+            document.write("Lãi tháng " + i + " : " + interest + "<br>")
+            document.write("Tiền tính lãi gộp tháng : " + i + " : " + total + "<br>")
+        }
+    }
+
+</script>
+</body>
+</html>

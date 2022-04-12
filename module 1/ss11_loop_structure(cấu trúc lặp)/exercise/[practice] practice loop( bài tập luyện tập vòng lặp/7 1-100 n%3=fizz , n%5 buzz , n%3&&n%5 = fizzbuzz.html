@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chuong trình hiển thị các số từ 1 đén 100 mà số chia hết cho 3= fizz , số chia hết cho 5 =buzz , số chia
+        hết cho 3 và 5 =fizzbuzz</title>
+</head>
+<body>
+<script>
+    let i;
+    for (i = 1; i <= 100; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            document.write(i + "= Fizzbuzz" + "<br>");
+        }
+    }
+    for (i = 1; i <= 100; i++) {
+        if (i % 3 === 0){
+            document.write(i + "= Fizz" + "<br>");
+        }
+    }for (i = 1; i <= 100; i++) {
+        if (i % 5 === 0){
+            document.write(i + "= buzz" + "<br>");
+        }
+    }
+
+
+</script>
+</body>
+</html>

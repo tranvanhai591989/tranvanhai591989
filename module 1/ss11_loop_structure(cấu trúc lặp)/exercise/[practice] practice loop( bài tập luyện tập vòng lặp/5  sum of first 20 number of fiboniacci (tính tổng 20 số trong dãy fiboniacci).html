@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính tổng 20 số đầu của dãy fiboniacci</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b =1 ;
+    let total = 0 ;
+    let nextNumber ;
+    document.write("Fiboniac "+ '<br>');
+    for (let i=1;i<=20;i++){
+        nextNumber= a+b;
+        a=b;
+        b=nextNumber;
+        document.write(a + "<br>");
+        total =a + total;  // Tương đương  total +=a;
+    }
+    document.write(total)
+
+</script>
+</body>
+</html>
