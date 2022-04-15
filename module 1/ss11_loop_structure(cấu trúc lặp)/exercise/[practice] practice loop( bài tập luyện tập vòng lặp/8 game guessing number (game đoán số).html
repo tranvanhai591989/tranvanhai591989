@@ -5,6 +5,26 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let number = parseInt(prompt("Insert number"));
+    let a=number;
+    let radom = Math.floor(Math.random() * a);
+    let y=0 ;
+    for (let i = 0; i < 3; i++)
+        if (radom === number) {
+            alert("Congratulations");break;
+        } else {
+            while (radom !== number) {
+                alert("Wrong , let again");
+                number = parseInt(prompt("Insert number"));
+            }
+        }
+    while (y < 3) {
+            if (y===3){
+                alert("Fail");
+            }
 
+    }
+</script>
 </body>
 </html>

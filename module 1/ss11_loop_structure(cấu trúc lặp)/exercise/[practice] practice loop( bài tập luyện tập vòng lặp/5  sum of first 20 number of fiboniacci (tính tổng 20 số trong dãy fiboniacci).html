@@ -11,14 +11,14 @@
     let total = 0 ;
     let nextNumber ;
     document.write("Fiboniac "+ '<br>');
-    for (let i=1;i<=20;i++){
+    for (let i=0;i<20;i++){
         nextNumber= a+b;
         a=b;
         b=nextNumber;
         document.write(a + "<br>");
         total =a + total;  // Tương đương  total +=a;
     }
-    document.write(total)
+    document.write("Tổng 20 số đầu của dãy fibonacci là : " + total)
 
 </script>
 </body>

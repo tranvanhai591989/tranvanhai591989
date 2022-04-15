@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số lượng từ trong một chuỗi</title>
+</head>
+<body>
+<script>
+    let arr = "asdasdadadjkhkjfksvbbliweq;rihsopsjchfbsfhbsjdhfbÁHBASJD";
+    let b = prompt("Nhập từ muốn tìm kiếm");
+    let count=1 ;
+    for (i=0;i<arr.length;i++){
+        if (b.indexOf(arr[i])!==-1){// vì mảng luôn bắt đầu từ 0 nên ko hiện đc -1
+            count++;
+        }
+    }document.write("Có "+count+ " chữ "+ b+ " trong chuỗi");
+
+</script>
+</body>
+</html>

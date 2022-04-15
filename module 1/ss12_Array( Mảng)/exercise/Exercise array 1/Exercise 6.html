@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>viết chương trình khởi tạo , nhập vào 1 mảng số nguyên gồm 10 phần tử.nhập/tạo phần tử v và tìm v có nằm
+        trong mảng không ??</title>
+</head>
+<body>
+<script>
+    let arr = [1, 5, 6, 12, 3, 34, 55, 34, 7, 8, 9, 12, 3345, 67];
+    let a = parseInt(prompt("Enter the number "));
+    let index = -1;
+    for (let i = 0; i < arr.length; i++) {
+        if (a === arr[i]) {
+            document.write(a + " is in the array");
+            index = i;
+            break;
+        }
+    }
+    if (index === -1) {
+        document.write(a + " is not in the array")
+    }
+</script>
+</body>
+</html>

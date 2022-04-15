@@ -6,7 +6,16 @@
 </head>
 <body>
 <script>
-    parseFloat(prompt('a'))
+    let a = "<table cellpadding='6' border='1' width='800' cellspacing='0'>";
+    for (let i=2;i<=10;i++){
+        a=a+"<tr>";
+        for (let j=1;j<=10;j++){
+            a=a+"<td>"+ j +"x" + i +"="+ i*j + "</td>";
+        }
+        a=a+ "</tr>";
+    }
+    a=a+"</table>";
+    document.write(a);
 </script>
 </body>
 </html>

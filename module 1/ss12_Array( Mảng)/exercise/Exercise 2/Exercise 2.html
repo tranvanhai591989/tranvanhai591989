@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình để in các ký tự 1 mảng theo thứ tự đảo ngược</title>
+</head>
+<body>
+<script>
+    let arr=['a','s', 'b','1','2','3'];
+    let first =0;
+    let last=arr.length-1;
+   for(let i=0;i<arr.length;i++){
+       if  (first<last){
+           let a = arr[first]
+           arr[first]=arr[last];
+           arr[last]=a;
+           first++;
+           last--
+       }
+   }
+    document.write(arr.join(''));
+</script>
+</body>
+</html>

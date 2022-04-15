@@ -6,111 +6,111 @@
 </head>
 <body>
 <style>
-form {
-background: #FF99FF;
-margin: 0 auto;
-width: 250px;
-padding: 15px;
-border-radius: 5px;
-}
+    form {
+        background: #FF99FF;
+        margin: 0 auto;
+        width: 250px;
+        padding: 15px;
+        border-radius: 5px;
+    }
 
-form * {
-box-sizing: border-box;
-}
+    form * {
+        box-sizing: border-box;
+    }
 
-form table {
-width: 100%;
-border-collapse: collapse;
-}
+    form table {
+        width: 100%;
+        border-collapse: collapse;
+    }
 
-form table tr, form table td {
-border: 3px solid #eee;
-}
+    form table tr, form table td {
+        border: 3px solid #eee;
+    }
 
-form table tr:first-child input {
-height: 50px;
-padding: 0 10px;
-font-weight: 500;
-}
+    form table tr:first-child input {
+        height: 50px;
+        padding: 0 10px;
+        font-weight: 500;
+    }
 
-form table tr:not(:first-child) td {
-height: 70px;
-}
+    form table tr:not(:first-child) td {
+        height: 70px;
+    }
 
-form table tr:not(:first-child) td input {
-height: 100%;
-}
+    form table tr:not(:first-child) td input {
+        height: 100%;
+    }
 
-form table input {
-width: 100%;
-display: block;
-border: 0;
-font-size: 16px;
-}
+    form table input {
+        width: 100%;
+        display: block;
+        border: 0;
+        font-size: 16px;
+    }
 
-form table input:focus {
-outline: none;
-}
+    form table input:focus {
+        outline: none;
+    }
 
-form table input:hover {
-background: #ff0000;
-transition: all .2s ease-in-out;
-}
+    form table input:hover {
+        background: #ff0000;
+        transition: all .2s ease-in-out;
+    }
 
-form table input.operator:hover {
-background: #08ff00;
-}
+    form table input.operator:hover {
+        background: #08ff00;
+    }
 
-form table input.operator {
-font-weight: 750px;
-color: #fff;
-background: #002200;
-}
+    form table input.operator {
+        font-weight: 750px;
+        color: #fff;
+        background: #002200;
+    }
 
-form table input.sss:hover {
-background: #00EE00;
-transition: all .2s ease-in-out;
-}
+    form table input.sss:hover {
+        background: #00EE00;
+        transition: all .2s ease-in-out;
+    }
 </style>
 
 <form name="calculator">
-                       <table>
-                       <tr>
-                       <td colspan="4">
-                                      <input type="text" class="sss" name="display" disabled placeholder="0">
-                                                                                                            </td>
-                                                                                                              </tr>
-                                                                                                                <tr>
-                                                                                                                <td><input type="button" name="one" value="1" onclick="calculator.display.value += 1"></td>
-                                                                                                                                                                                                        <td><input type="button" name="two" value="2" onclick="calculator.display.value += 2"></td>
-                                                                                                                                                                                                                                                                                                <td><input type="button" name="three" value="3" onclick="calculator.display.value += 3"></td>
-                                                                                                                                                                                                                                                                                                                                                                                          <td><input type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   </td>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     </tr>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <tr>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <td><input type="button" name="four" value="4" onclick="calculator.display.value += 4"></td>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <td><input type="button" name="five" value="5" onclick="calculator.display.value += 5"></td>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <td><input type="button" name="six" value="6" onclick="calculator.display.value += 6"></td>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 <td><input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           </td>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             </tr>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <tr>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <td><input type="button" name="seven" value="7" onclick="calculator.display.value += 7"></td>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <td><input type="button" name="eight" value="8" onclick="calculator.display.value += 8"></td>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   <td><input type="button" name="nine" value="9" onclick="calculator.display.value += 9"></td>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <td><input type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </td>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <tr>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <td><input type="button" class="operator" id="clear" name="clear" value="C"
-onclick="calculator.display.value = ''">
-                                       <td><input type="button" class="operator" name="zero" value="0" onclick="calculator.display.value += '0'">
-                                                                                                                                                </td>
-                                                                                                                                                  <td><input type="button" class="operator" name="doit" value="="
-onclick="calculator.display.value = eval(calculator.display.value)"></td>
-                                                                      <td><input type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'">
-                                                                                                                                                                              </td>
-                                                                                                                                                                                </tr>
-                                                                                                                                                                                  </table>
+    <table>
+        <tr>
+            <td colspan="4">
+                <input type="text" class="sss" name="display" disabled placeholder="0">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" name="one" value="1" onclick="calculator.display.value += 1"></td>
+            <td><input type="button" name="two" value="2" onclick="calculator.display.value += 2"></td>
+            <td><input type="button" name="three" value="3" onclick="calculator.display.value += 3"></td>
+            <td><input type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" name="four" value="4" onclick="calculator.display.value += 4"></td>
+            <td><input type="button" name="five" value="5" onclick="calculator.display.value += 5"></td>
+            <td><input type="button" name="six" value="6" onclick="calculator.display.value += 6"></td>
+            <td><input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" name="seven" value="7" onclick="calculator.display.value += 7"></td>
+            <td><input type="button" name="eight" value="8" onclick="calculator.display.value += 8"></td>
+            <td><input type="button" name="nine" value="9" onclick="calculator.display.value += 9"></td>
+            <td><input type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" class="operator" id="clear" name="clear" value="C"
+                       onclick="calculator.display.value = ''">
+            <td><input type="button" class="operator" name="zero" value="0" onclick="calculator.display.value += '0'">
+            </td>
+            <td><input type="button" class="operator" name="doit" value="="
+                       onclick="calculator.display.value = eval(calculator.display.value)"></td>
+            <td><input type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'">
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

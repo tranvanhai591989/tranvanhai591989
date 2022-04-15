@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình nhập 2 chuỗi, xem 2 chuỗi có giống nhau ko</title>
+</head>
+<body>
+<script>
+    let arr='aa123k123kjh12k3j';
+    let arr2 ='ádkjhskdffqưq';
+   if (arr.length!==arr2.length){
+       document.write("Hai chuỗi không giống nhau");
+   }else {
+
+       for (let i=0;i<arr.length;i++){
+           if (arr[i]!==arr2[i]){
+               document.write("Hai chuỗi không giống nhau");
+               break;
+           }else {
+               document.write("Hai chuỗi giống nhau")
+           }
+       }
+   }
+</script>
+</body>
+</html>

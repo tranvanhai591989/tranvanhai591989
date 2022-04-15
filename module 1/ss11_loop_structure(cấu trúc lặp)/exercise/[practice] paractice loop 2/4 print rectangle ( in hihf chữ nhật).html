@@ -6,17 +6,17 @@
 </head>
 <body>
 <script>
-    let a= parseInt(prompt("Nhập cạnh a"));
+    let a = parseInt(prompt("Nhập cạnh a"));
     let b = parseInt(prompt("nhập cạnh B"));
-    for (let i=1;i<=a;i++) {
-        for (j=1;j<=b;j++){
-            if (i===1 || i===a || j===1 || j===b){
+    for (let i = 1; i <= a; i++) {
+        for (j = 1; j <= b; j++) {
+            if (i === 1 || i === a || j === 1 || j === b) {
                 document.write("*");
-            }else {
+            } else {
                 document.write("&nbsp&nbsp")
             }
-
-        }document.write("<br>")
+        }
+        document.write("<br>")
     }
 </script>
 </body>

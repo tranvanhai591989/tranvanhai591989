@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng số nguyên gồm 10 phần tử khác nhau. tìm số lớn nhất và vị trí của nó</title>
+</head>
+<body>
+<script>
+    let arr=[-9,-8,-7];
+    let max=arr[0];
+    let b ;
+    for (let i=0;i<arr.length;i++){
+        if (arr[i]>max){
+            max = arr[i];
+            b=i;
+        }
+    }
+    document.write("Số lớn nhất là : " + max +" tại vị trí "+ b)
+</script>
+</body>
+</html>

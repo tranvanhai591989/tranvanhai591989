@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo mảng, tìm giá trị lớn nhất và in ra giá trị trung bình </title>
+</head>
+<body>
+<script>
+    let arr=[100,1,6,8,4,7,4,11,15,17,19,14,44,77];
+    let max = 1 ;
+    let sum =0 ;
+    let average =0;
+    for (let  i=0;i<arr.length;i++){
+        if (arr[i]>max){
+            max=arr[i];
+            document.write("Giá trị lớn nhất trong mảng là : "+ max + "<br>");
+        }
+    }
+    for (let i = 0;i<arr.length;i++){
+        sum += arr[i];
+        average=sum/arr.length;
+    }
+    document.write("Giá trị trung bình của các giá trị trong mảng là :  "+average)
+</script>
+</body>
+</html>

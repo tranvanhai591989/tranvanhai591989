@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sắp xếp mảng theo thứ tự giảm dần và hiển thị mảng</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i=0;i<10;i++){
+        arr[i]= parseInt(prompt("Insert the number"));
+    }
+    document.write(arr + "<br>");
+    for (let i =0;i<arr.length;i++){
+        for (let j=i+1;j<arr.length;j++ ){
+            if (arr[i]<arr[j]){
+                let a = arr[j];
+                arr[j]=arr[i];
+                arr[i]= a;
+            }
+        }
+    }
+    document.write("Mảng đã được sắp xếp "+arr)
+</script>
+</body>
+</html>

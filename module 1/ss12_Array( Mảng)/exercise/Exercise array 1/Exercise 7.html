@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra V có thuộc mảng,nếu v thuộc mảng thì xóa v khỏi mảng và ghi v vào mảng mới</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = parseInt(prompt("insert the number"));
+    }
+    let v = parseInt(prompt("Nhập số muốn loại bỏ"));
+    let b ;// để hứng giá trị i khi giá trị v giống với giá trị trong mảng.
+    for (let i = 0; i < 10; i++) {
+        if (arr[i]===v){
+            b=i;
+            break;
+        }
+
+    }
+    for (;b<arr.length;b++){
+        arr[b]= arr[b+1];
+    }
+    arr[arr.length-1]=0;
+    document.write(arr.toString());
+
+</script>
+</body>
+</html>

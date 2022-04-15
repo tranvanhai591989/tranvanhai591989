@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tạo/nhập 2 mảng số a,b gồm 10 fan tử. mảng c gồm 20 fan tử nguyên . hiển thị mảng c</title>
+</head>
+<body>
+<script>
+    let a = [];
+    for (let i = 0; i < 3; i++) {
+        a[i] = parseInt(prompt("Nhập mảng a"));
+    }
+    document.write("Mảng a : " + a + "<br>");
+    let b = [];
+    for (let i = 0; i < 3; i++) {
+        b[i] = parseInt(prompt("Nhập mảng b"));
+    }
+    document.write("Mảng b : " + b + "<br>");
+    let c = [];
+    for (let i = 0; i < a.length + b.length; i++) {
+        if (i < b.length) {
+            c[i] = b[i];
+        } else {
+            c[i] = a[i - b.length]
+        }
+
+    }
+    document.write("Mảng c : " + c)
+
+
+</script>
+</body>
+</html>

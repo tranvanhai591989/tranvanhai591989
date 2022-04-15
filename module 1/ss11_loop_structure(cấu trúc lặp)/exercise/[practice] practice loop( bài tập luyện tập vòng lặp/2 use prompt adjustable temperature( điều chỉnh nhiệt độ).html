@@ -6,15 +6,24 @@
 </head>
 <body>
 <script>
-      let temperature= parseFloat(prompt('Input temperature '));
-      for (temperature;temperature<20;temperature) {
-          alert("Tăng nhiệt độ");
-          break;
-      }
-      for (temperature;temperature>100;temperature) {
-          alert("Giảm nhiệt độ");
-          break;
-      }
+    do {
+        let temperature;
+        do{
+            temperature = prompt('Input temperature ');
+            if(!isNaN(temperature) && Number.isInteger(parseFloat(temperature)) ){
+                temperature = parseInt(temperature);
+                break;
+            }
+        }while (true)
+        if (temperature < 20) {
+            alert("Tăng nhiệt độ");
+        } else if (temperature > 100) {
+            alert("Giảm nhiệt độ");
+        } else {
+            alert("chuẩn ko chỉnh");break;
+        }
+
+    }while (true)
 
 
 </script>
