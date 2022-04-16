@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập mảng ký tự và tìm tất cả các kí tự (-) trong mảng và thay thế bằng (_)</title>
+</head>
+<body>
+<script>
+    let arr = []
+    for (let i = 0; i < 5; i++) {
+        arr[i] = prompt("Input")
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] ==="-"){
+            arr[i] = "_"
+            }
+    }document.write(arr)
+</script>
+</body>
+</html>

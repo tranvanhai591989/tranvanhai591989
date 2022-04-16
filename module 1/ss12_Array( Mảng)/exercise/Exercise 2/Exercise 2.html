@@ -6,18 +6,18 @@
 </head>
 <body>
 <script>
-    let arr=['a','s', 'b','1','2','3'];
-    let first =0;
-    let last=arr.length-1;
-   for(let i=0;i<arr.length;i++){
-       if  (first<last){
-           let a = arr[first]
-           arr[first]=arr[last];
-           arr[last]=a;
-           first++;
-           last--
-       }
-   }
+    let arr = ['a', 's', 'b', '1', '2', '3'];
+    let first = 0;
+    let last = arr.length - 1;
+    for (let i = 0; i < arr.length; i++) {
+        if (first < last) {
+            let a = arr[first];
+            arr[first] = arr[last];
+            arr[last] = a;
+            first++;
+            last--;
+        }
+    }
     document.write(arr.join(''));
 </script>
 </body>

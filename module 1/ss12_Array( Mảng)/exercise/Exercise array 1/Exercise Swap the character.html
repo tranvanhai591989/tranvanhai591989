@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Swap the case of each character of a string, upper case to lower and vice versa(Chuyển viết thường thành viết hoa và ngược lại</title>
+    <title>Swap the case of each character of a string, upper case to lower and vice versa(Chuyển viết thường thành viết
+        hoa và ngược lại</title>
 </head>
 <body>
 <script>
@@ -10,20 +11,13 @@
     let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     let LOWER = 'abcdefghijklmnopqrstuvwxyz';
     let result = [];
-
-    for(var x=0; x<str.length; x++)
-    {
-        if(UPPER.indexOf(str[x]) !== -1)
-        {
-            result.push(str[x].toLowerCase());
-        }
-        else if(LOWER.indexOf(str[x]) !== -1)
-        {
-            result.push(str[x].toUpperCase());
-        }
-        else
-        {
-            result.push(str[x]);
+    for (let i = 0; i < str.length; i++) {
+        if (UPPER.indexOf(str[i]) !== -1) {
+            result.push(str[i].toLowerCase());
+        } else if (LOWER.indexOf(str[i]) !== -1) {
+            result.push(str[i].toUpperCase());
+        } else {
+            result.push(str[i]);
         }
     }
     document.write(result.join(''));
