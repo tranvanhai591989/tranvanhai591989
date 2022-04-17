@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập 1 chuỗi bất kì. tìm số từ và kí tự chữ có trong chuỗi</title>
+</head>
+<body>
+<script>
+    let arr = 'Tran Van Hai ASD DDSSDS';// nếu dấu cách là các kí tự đầu tiên thì ko áp dụng đc công thức này
+    let count = 1;
+    let i = 0;
+    let b;
+    document.write("Chuỗi " + arr.toString() + "<br>")
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] === " ") {
+            count++;
+        }
+    }
+    b = arr.length - count + 1
+    document.write("Có " + count + " từ " + b + " kí tự");
+</script>
+</body>
+</html>

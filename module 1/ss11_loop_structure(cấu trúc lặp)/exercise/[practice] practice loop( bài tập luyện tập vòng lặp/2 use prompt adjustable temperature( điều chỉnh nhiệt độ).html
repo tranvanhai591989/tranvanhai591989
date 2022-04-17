@@ -8,24 +8,22 @@
 <script>
     do {
         let temperature;
-        do{
+        do {
             temperature = prompt('Input temperature ');
-            if(!isNaN(temperature) && Number.isInteger(parseFloat(temperature)) ){
+            if (!isNaN(temperature) && Number.isInteger(parseFloat(temperature))) {
                 temperature = parseInt(temperature);
                 break;
             }
-        }while (true)
+        } while (true)
         if (temperature < 20) {
             alert("Tăng nhiệt độ");
         } else if (temperature > 100) {
             alert("Giảm nhiệt độ");
         } else {
-            alert("chuẩn ko chỉnh");break;
+            alert("chuẩn ko chỉnh");
+            break;
         }
-
-    }while (true)
-
-
+    } while (true);
 </script>
 </body>
 </html>

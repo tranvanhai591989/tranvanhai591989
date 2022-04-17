@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập 1 số nguyên bất kì, hiển thị các số KHÔNG phải số nguyên tố từ 0 đến số người dùng nhập vào </title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Nhập number"));
+  if (number>2){
+      document.write(0+"<br>" + 1 + "<br>")
+  }else {
+      for (let i=3 ; i<number;i++){
+          for (let j = 2; j<i;j++){
+              if (i%j===0){
+                  document.write(i+"<br>");
+                  break;
+              }
+          }
+      }
+  }
+
+</script>
+</body>
+</html>

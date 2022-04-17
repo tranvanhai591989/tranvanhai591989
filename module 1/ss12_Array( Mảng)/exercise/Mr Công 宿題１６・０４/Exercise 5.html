@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị các số nhở hơn 10000 và thỏa mãn thuộc dãy fibonacci và là sô nguyên tố</title>
+</head>
+<body>
+<script>
+    let n = 10000;
+    let j;
+    let a = 0;
+    let b = 1;
+    let c = 0;
+    let flag = true;
+    while (c < n) {
+        c = a + b;
+        a = b;
+        b = c;
+        flag = true;
+        if (c <= 1) {
+            flag = false
+        } else {
+            for (let i = 3; i < c; i++) {
+                if (c % i === 0) {
+                    flag = false;
+                }
+            }
+        }
+        if (flag === true) {
+            document.write(c + '<br>');
+        }
+
+    }
+
+
+</script>
+</body>
+</html>

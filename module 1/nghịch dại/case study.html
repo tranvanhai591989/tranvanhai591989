@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let pat = /^[0-9]{4}$/;
+    let num;
+    do {
+        num = prompt("nhap so");
+    } while (!pat.test(num));
+    if (pat.test(num)) {
+        console.log(Number.parseInt(num.charAt(0)));//
+        alert(test(num))
+        // alert(isNumber(num))
+    }
+    // function isNumber(num) {
+    //
+    //     let n1 = parseInt(num.charAt(0));
+    //     let n2 = parseInt(num.charAt(1));
+    //     let n3 = parseInt(num.charAt(2));
+    //     let n4 = parseInt(num.charAt(3));
+    //     return n1 + n2 === n3 - n4;
+    // }
+    function test(num) {
+        return Number.parseInt(num.charAt(0)) + Number.parseInt(num.charAt(1)) === Number.parseInt(num.charAt(2)) - Number.parseInt(num.charAt(3));
+    }
+</script>
+</body>
+</html>
