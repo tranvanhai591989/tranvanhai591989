@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhập 1 mảng số và 1 số nguyên bất kì. nếu nhập số lẻ thì số chẵn trong mảng sẽ tăng lên 1 đơn vị và ngược
+        lại</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Chọn chiều dài của mảng"));
+    let arr = [];
+    for (let i = 0; i < a; i++) {
+        arr[i] = parseInt(prompt("Nhập vào"));
+    }
+    document.write("Mảng ban đầu "+arr + "<br>")
+    let b = parseInt(prompt("Nhập số để duyệt"));
+    document.write("Số để duyệt : "+b +"<br>")
+    if (b % 2 === 0) {
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] % 2 !== 0) {
+                arr[j]++;
+            }
+        }
+    } else {
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] % 2 === 0) {
+                arr[j]++;
+            }
+        }
+    }
+    document.write("Mảng sau khi duyệt "+arr.toString());
+
+</script>
+</body>
+</html>

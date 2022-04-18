@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đổi giữa met va feet</title>
+</head>
+<body>
+<form>
+    <p>
+        <label>Feet</label>
+        <input id="Feet" type="number" placeholder="Feet"
+               oninput="lengthConvert(this.value)"
+               onchange="lengthConvert(this.value)">
+    </p>
+    <p>
+        <label>Meters</label>
+        <input id="Meters" type="number" placeholder="Meters"
+               oninput="lengthConvert2(this.value)"
+               onchange="lengthConvert2(this.value)">
+    </p>
+</form>
+<script>
+    function lengthConvert(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("Meters").value = valNum*0.305;
+    }function lengthConvert2(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("Feet").value = valNum*3.279;
+    }
+</script>
+</body>
+</html>

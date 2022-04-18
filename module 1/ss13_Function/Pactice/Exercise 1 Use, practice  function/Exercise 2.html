@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2: Tạo hàm nhận vào một đối số dạng số, tăng giá trị đối số đó
+        lên 1 và trả lại giá trị cho lời gọi hàm. Gọi hàm từ trong phần
+        <body> của trang web và hiển thị kết quả lên màn hình.
+    </title>
+</head>
+<body>
+<button onclick="push(document.getElementById('cong1').value)">Push 1</button>
+    <input id="cong1" type="number" placeholder="Input The Number">
+
+<script>
+    function push(value) {
+        value = parseFloat(value) +1 ;
+        document.getElementById("cong1").value = value;
+    }
+</script>
+</body>
+</html>

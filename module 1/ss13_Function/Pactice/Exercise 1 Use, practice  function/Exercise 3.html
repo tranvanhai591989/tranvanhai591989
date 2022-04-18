@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3: Tạo hàm nhận vào hai tham số. Nếu giá trị của tham số thứ nhất
+        lớn hơn tham số thứ hai, hiển thị hộp thoại thông báo cho người dùng.
+        Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai,
+        trả về tổng của hai tham số.</title>
+</head>
+<body>
+<script>
+    let a=parseInt(prompt("Input The Number"));
+    let b=parseInt(prompt("Input The Number"));
+    let z;
+    function alertMessage(x,y) {
+        if (x>y){
+            alert(x + "Lớn hơn "+ y);
+        }else {
+            z = x +y ;
+            alert( x + " cộng "+ y + " bằng " + z)
+        }
+    }
+    alertMessage(a,b)
+</script>
+</body>
+</html>

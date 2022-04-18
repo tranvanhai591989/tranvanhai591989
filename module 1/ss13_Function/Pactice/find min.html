@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị nhỏ nhất của mảng</title>
+</head>
+<body>
+<script>
+    let arr1 =[];
+    let a= parseInt(prompt("nhập chiều dài của mảng"));
+    for (let i=0 ; i<a;i++){
+        arr1[i]=parseInt(prompt("Giá trị của mảng"));
+    }
+    document.write("Mảng : "+arr1 +"<br>")
+    let min = minArray(arr1);
+
+    function minArray(arr) {
+        if(arr.length === 0){
+            return -1;
+        }
+
+        let min = arr[0];
+        for(let i = 1; i < arr.length; i++){
+            if(arr[i] < min){
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+    document.write("Giá trị nhỏ nhất của mảng là "+min);
+</script>
+</body>
+</html>

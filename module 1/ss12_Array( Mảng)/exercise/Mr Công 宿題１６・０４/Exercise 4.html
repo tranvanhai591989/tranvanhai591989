@@ -6,10 +6,18 @@
 </head>
 <body>
 <script>
-    let a=parseInt(prompt("Nhập chiều dài của Mảng "))
-    let arr=[];
-    for (let i=0;i<a;i++){
+    let arr = [15, 12, 15, 23, 46, 16, 26, 15, 61, 12];
+    let count = 1;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i+1; j < arr.length ; j++) {
+            if (arr[i] === arr[j]) {
+                count++;
 
+            }
+
+        }
+        document.write(arr[i] + ": " + count + "<br>");
+        count=1;
     }
 
 </script>

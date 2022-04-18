@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhập 1 mảng số nguyên . nếu 2 vị trí liền kề bằng 20 thì chuyển thành 20,20</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập vào"));
+    let arr = [];
+    for (let i=0;i<a;i++){
+        arr[i] = parseInt(prompt("Nhập vào"));
+    }
+    for (let j= 0; j < arr.length; j++) {
+
+        if (arr[j] + arr[j + 1] === 20) {
+            arr[j] = 20;
+            arr[j + 1] = 20;
+        }
+    }
+    document.write(arr);
+
+
+</script>
+</body>
+</html>
