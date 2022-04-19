@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn.
+        Gọi hàm vừa xây dựng được</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập bán kính hình tròn"));
+    let PI=3.14;
+    let S;
+    let P;
+function acreage(x) {
+    S= Math.pow(x,2) * PI;
+}
+function perimeter(x) {
+    P= (x*2)*PI;
+}
+    acreage(a);
+document.write("hình tròn có diện tích là : " + S + "<br>");
+    perimeter(a);
+    document.write("và có chu vi là : "+P )
+</script>
+</body>
+</html>

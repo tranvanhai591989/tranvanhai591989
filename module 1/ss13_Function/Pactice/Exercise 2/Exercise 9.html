@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra
+        xem ký tự bất kỳ đó có nằm trong mảng không. Nếu có trả về số lần xuất hiện
+        của ký tự đó, nếu không trả về -1. </title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let a = prompt("Nhập sl giá trị trong mảng");
+    let count = 0;
+    for (let i = 0; i < a; i++) {
+        arr[i] = prompt("nhập giá trị ");
+    }
+    document.write(arr + "<br>");
+    let b = prompt("Nhập ki tự muốn tìm");
+    find(b)
+
+    function find(x) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (x === arr[i]) {
+                count++;
+
+            }
+        }
+        if (count !== 0) {
+            document.write(x + " có " + count + " lần  xuất hiện");
+        } else {
+            document.write('-1')
+        }
+    }
+
+</script>
+
+</body>
+</html>

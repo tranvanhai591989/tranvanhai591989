@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>viết chuong trình nhập lương nhân viên về lương ròng</title>
+</head>
+<body>
+<form>
+    <p>
+        <label>Lương thực tế</label>
+        <input id="thucte" type="number" placeholder="Lương thực tế"
+               oninput="takewage(this.value)"
+               onchange="takewage(this.value)">
+    </p>
+    <p>
+        <label>Lương thực nhận</label>
+        <input id="thucnhan" type="number" placeholder="Thực nhận"
+
+    </p>
+
+</form>
+<script>
+    function takewage(valNum) {
+        valNum=parseInt(valNum);
+        if (valNum>15000000){
+            document.getElementById("thucnhan").value= valNum*0.8;
+        }else if (valNum>7000000){
+            document.getElementById("thucnhan").value= valNum*0.9;
+        }else if (valNum>0){
+            document.getElementById("thucnhan").value= valNum*0.95;
+        }
+
+    }
+</script>
+</body>
+</html>

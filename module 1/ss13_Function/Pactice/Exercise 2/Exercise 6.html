@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có
+        phải là nguyên dương không. Nếu là nguyên dương trả về true,
+        ngược lại trả về false.</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập số nguyên bất kì");
+    function check(x) {
+
+        if (parseInt(x)>0  && !isNaN(x)){
+            document.write( x + " true");
+        }else{
+            document.write(x + " False")
+        }
+
+    }
+    check(a);
+</script>
+</body>
+</html>

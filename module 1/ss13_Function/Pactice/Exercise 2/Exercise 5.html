@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên
+        có giá trị nhỏ nhất.</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 3; i++) {
+        arr[i] = parseInt(prompt("Input the Number"));
+    }
+
+    function checkMin() {
+        let min = arr[0];
+        for (let j = 1; j < 3; j++) {
+            if (min > arr[j]) {
+                min = arr[j];
+            }
+        }
+        return min;
+    }
+
+    let z = checkMin(arr);
+    document.write(z);
+</script>
+</body>
+</html>
