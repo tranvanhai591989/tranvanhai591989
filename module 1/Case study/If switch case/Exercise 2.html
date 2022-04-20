@@ -8,11 +8,10 @@
 <body>
 <script>
     let nhap = prompt("Nhập chữ cái bất kì");
-    switch (nhap){
-        case 'o':
-        case 'O':
-            
-
+    if (nhap =='o' ||nhap =='O' ||nhap =='u' ||nhap =='U' ||nhap =='i' ||nhap =='I' ||nhap =='a' ||nhap =='A' ||nhap =='E' ||nhap =='E' ){
+            document.write(nhap +" : là nguyên âm");
+    }else {
+        document.write(nhap +" :  không phải là nguyên âm");
     }
 </script>
 </body>

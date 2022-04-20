@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xây dựng mảng b là prefix sums của mảng a </title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = [];
+    let num = parseInt(prompt("Nhập chiều dài mảng a"));
+    for (let i = 0; i < num; i++) {
+        a[i] = parseInt(prompt("Nhập giá trị mảng a"));
+        b[i]=0;
+        for (let j = i; j >=0; j--) {
+            b[i] += a[j];
+        }
+    }
+    document.write(a + "<br>");
+    document.write(b.toString())
+
+</script>
+</body>
+</html>

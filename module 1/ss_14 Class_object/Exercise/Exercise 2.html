@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả temperature</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(oC) {
+            this.oC=oC;
+        }
+        getKenvin = function () {
+            return this.oC - 273.15;
+        }
+        getFahrenheit = function () {
+            return (this.oC*1.8) + 32
+        }
+    }
+    let temperature = new Temperature(25);
+    let ken = temperature.getKenvin();
+    let fahrenheit = temperature.getFahrenheit();
+    document.write("Kenvin : "+ken + " <br>"+ "Fahrenheit  : " + fahrenheit)
+</script>
+</body>
+</html>
