@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        decreaseWeight() {
+            if (this.weight > 0) {
+                this.weight--;
+            }
+        }
+
+        isEmpty() {
+            if (this.weight == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        getGender() {
+            return this.gender;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        isMale() {
+            if (this.gender == "Male") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        checkApple(apple) {
+            if (apple.getWeight() > 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        eat(apple) {
+            if (apple.getWeight() > 0) {
+                this.weight++;
+                apple.decreaseWeight();
+            }
+        }
+
+        say(content) {
+            alert("I'am " + this.name + " : " + content);
+        }
+    }
+
+    let apple = new Apple(10);
+
+    let adam = new Human("Adam", "Male", 60);
+    let eva = new Human("Eva", "Female", 50);
+
+    document.write("Apple: "+ apple.getWeight() + "<br>");
+    document.write("Adam: "+ adam.getWeight() + "<br>");
+    document.write("Eva: " + eva.getWeight() + "<br>");
+
+    // eva.eat(apple);
+    // adam.eat(apple)
+    while (apple.isEmpty() == false){
+        eva.eat(apple);
+        adam.eat(apple)
+    }
+    document.write("<hr>")
+
+    document.write("Apple: "+ apple.getWeight() + "<br>");
+    document.write("Adam: "+ adam.getWeight() + "<br>");
+    document.write("Eva: " + eva.getWeight() + "<br>");
+
+    adam.say("I love you.")
+</script>
+</body>
+</html>

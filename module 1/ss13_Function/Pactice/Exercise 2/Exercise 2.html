@@ -18,9 +18,14 @@ function perimeter(x) {
     P= (x*2)*PI;
 }
     acreage(a);
-document.write("hình tròn có diện tích là : " + S + "<br>");
+    document.write("hình tròn có diện tích là " + S + "<br>");
     perimeter(a);
-    document.write("và có chu vi là : "+P )
+    document.write("và có chu vi là : "+P +"<br>")
+    let b = parseInt(prompt("Nhập bán kính hình tròn"));
+    acreage(b);
+    document.write("hình tròn có diện tích là " + S + "<br>");
+    perimeter(b);
+    document.write("và có chu vi là : "+P + "<br>")
 </script>
 </body>
 </html>

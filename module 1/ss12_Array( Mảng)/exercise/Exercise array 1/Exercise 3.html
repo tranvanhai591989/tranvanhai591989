@@ -11,15 +11,14 @@
     let sum =0 ;
     let average =0;
     for (let  i=0;i<arr.length;i++){
+        sum += arr[i];
+        average=sum/arr.length;
         if (arr[i]>max){
             max=arr[i];
             document.write("Giá trị lớn nhất trong mảng là : "+ max + "<br>");
         }
     }
-    for (let i = 0;i<arr.length;i++){
-        sum += arr[i];
-        average=sum/arr.length;
-    }
+
     document.write("Giá trị trung bình của các giá trị trong mảng là :  "+average)
 </script>
 </body>
